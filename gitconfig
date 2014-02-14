@@ -1,0 +1,20 @@
+[user]
+	email = oolebedev@gmail.com
+	name = olebedev
+[alias]
+	ci = commit
+	go = checkout
+	br = branch
+	st = status -sb
+	cia = commit --amend
+	up = !(git add . && git stash && git pull --rebase >&2) | grep -v \"No local changes to save\" && git stash pop
+	backup = !file=../`git describe`.tar && echo \"Creating `readlink -f $file`\" && tar cf $file .
+	unstage = reset HEAD --
+	addremove = !git add . && git ls-files --deleted | xargs --no-run-if-empty git rm
+	in = "!git remote update -p; git log ..@{u}"
+	out = log @{u}..
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[core]
+	excludesfile = /Users/olebedev/.gitignore_global
+[push]
+	default = simple
