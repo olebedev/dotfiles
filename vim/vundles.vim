@@ -6,8 +6,8 @@
 " Once you've updated the list of plugin, you can run vundle update by issuing
 " the command :BundleInstall from within vim or directly invoking it from the
 " command line with the following syntax:
-" vim --noplugin -u vim/vundles.vim -N "+set hidden" "+syntax on" +BundleClean! +BundleInstall +qall
-" Filetype off is required by vundle
+" vim --noplugin -u vim/vundles.vim -N "+set hidden" "+syntax on"BundleClean! +BundleInstall +qall
+" Filetype off is required by vund
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
@@ -16,141 +16,205 @@ call vundle#rc()
 " let Vundle manage Vundle (required)
 Bundle "gmarik/vundle"
 
-" All your bundles here
+" Syntax highlighting and indent
 
-" Ruby, Rails, Rake...
-" Bundle "ecomba/vim-ruby-refactoring"
-" Bundle "tpope/vim-rails.git"
-" Bundle "tpope/vim-rake.git"
-" Bundle "tpope/vim-rvm.git"
-" Bundle "vim-ruby/vim-ruby.git"
-" Bundle "Keithbsmiley/rspec.vim"
-" Bundle "skwp/vim-iterm-rspec"
-" Bundle "skwp/vim-spec-finder"
+  " Indention lines
+    Bundle "Yggdroot/indentLine"
 
-Bundle "ck3g/vim-change-hash-syntax"
+  " Markdown syntax
+    Bundle 'tpope/vim-markdown'
 
-" Other languages
-Bundle "briancollins/vim-jst"
-Bundle "pangloss/vim-javascript"
-Bundle "rodjek/vim-puppet"
-Bundle "othree/javascript-libraries-syntax.vim"
+  " Textile syntax
+    Bundle 'timcharper/textile.vim'
 
-" Html, Xml, Css, Markdown...
-" Bundle "claco/jasmine.vim"
-" Bundle "digitaltoad/vim-jade.git"
-Bundle "groenewege/vim-less.git"
-" Bundle "itspriddle/vim-jquery.git"
-Bundle "jtratner/vim-flavored-markdown.git"
-Bundle "gkz/vim-ls.git"
-Bundle "kchmck/vim-coffee-script"
-Bundle "nelstrom/vim-markdown-preview"
-Bundle "skwp/vim-html-escape"
-Bundle "slim-template/vim-slim.git"
-Bundle "timcharper/textile.vim.git"
-" Bundle "tpope/vim-haml"
-" Bundle "wavded/vim-stylus"
+  " HTML5 omnicomplete and syntax
+    Bundle 'othree/html5.vim'
 
-" Git related...
-" Bundle "gregsexton/gitv"
-" Bundle "mattn/gist-vim"
-" Bundle "tpope/vim-fugitive"
-" Bundle "tpope/vim-git"
+  " JavaScript syntax
+    Bundle 'pangloss/vim-javascript'
 
-" General text editing improvements...
-Bundle "AndrewRadev/splitjoin.vim"
-Bundle "Raimondi/delimitMate"
-Bundle "Shougo/neocomplete.git"
-Bundle "briandoll/change-inside-surroundings.vim.git"
-Bundle "godlygeek/tabular"
-Bundle "skwp/vim-easymotion"
-Bundle "tomtom/tcomment_vim.git"
-Bundle "tpope/vim-bundler"
-Bundle "vim-scripts/camelcasemotion.git"
-Bundle "vim-scripts/matchit.zip.git"
-Bundle "terryma/vim-multiple-cursors"
+  " CoffeeScript syntax
+    Bundle 'kchmck/vim-coffee-script'
+
+  " LiveScript syntax
+    Bundle "gkz/vim-ls.git"
+
+  " Node.js syntax
+    Bundle 'guileen/vim-node'
+
+  " Less syntax
+    Bundle 'groenewege/vim-less'
+
+  " CSS3 syntax extension for built-in CSS module
+    Bundle 'hail2u/vim-css3-syntax'
+
+  " Fixed CSS indent plugin
+    Bundle 'miripiruni/vim-better-css-indent'
+
+  " Git config syntax
+    Bundle 'tpope/vim-git'
+
+  " Tmux config vim syntax
+    Bundle 'zaiste/tmux.vim'
+
+  " Highlight colors in css files
+    Bundle 'ap/vim-css-color'
+
+" Vundle setup
+  " Validation and file cleanup
+
+    " Script to remove trailing whitespaces
+      Bundle 'bronson/vim-trailing-whitespace'
+
+    " Automatic css rules sorting
+      Bundle 'miripiruni/CSScomb-for-Vim'
+
+  " File Navigation / Editing/ Project Management
+
+    " 
+      Bundle "jistr/vim-nerdtree-tabs.git"
+
+    "
+      Bundle "scrooloose/nerdtree.git"
+
+    " 
+      Bundle "justinmk/vim-sneak"
+
+    " Rename, delete, save and other useful bindings
+      Bundle 'tpope/vim-eunuch'
+
+    " Fuzzy file, buffer, mru, tag, etc finder
+      Bundle 'kien/ctrlp.vim'
+
+    " Vim plugin to list, select and switch between buffers
+      Bundle 'jeetsukumaran/vim-buffergator'
+
+    " Switch very quickly between your active buffers
+      Bundle 'LustyJuggler'
+
+    " Delete all the buffers except the current/named buffer
+    " Bundle 'BufOnly.vim'
+
+    " Pairs of handy bracket mappings
+      Bundle 'tpope/vim-unimpaired'
+
+    " Extended % matching for HTML, LaTeX, and many other languages
+      Bundle 'tsaleh/vim-matchit'
+
+    " Easily search for, substitute, and abbreviate multiple variants of a word
+      Bundle 'tpope/vim-abolish'
+
+    " Vim motions on speed!
+      Bundle 'Lokaltog/vim-easymotion'
+
+    " Camel Case
+      Bundle 'bkad/CamelCaseMotion'
+
+    " Plugin for better line numbers
+      Bundle 'myusuf3/numbers.vim'
+
+  " Search
+
+    " Ack wrapper
+      Bundle 'mileszs/ack.vim'
+
+    "
+      Bundle "rking/ag.vim"
+
+    "
+      Bundle "tjennings/git-grep-vim"
+
+    "
+      Bundle "vim-scripts/IndexedSearch"
+
+  " Autocomplete, snippets and batch editing
+
+    " Quoting/parenthesizing made simple
+      Bundle 'tpope/vim-surround'
+
+    " Perform all your vim insert mode completions with Tab
+      " Bundle "ervandew/supertab"
+      Bundle "Shougo/neocomplete.git"
+      " Bundle "Shougo/echodoc.vim"
+      " Bundle 'AutoComplPop'
+      " Bundle 'Valloric/YouCompleteMe'
+
+    " Vim script for text filtering and alignment
+      Bundle 'godlygeek/tabular'
+
+    " Commenting plugin
+      Bundle 'tomtom/tcomment_vim'
+      " Bundle 'scrooloose/nerdcommenter'
+
+    " Plugin for editorconfig
+      Bundle 'editorconfig/editorconfig-vim'
+
+    " Tern plugin for Vim
+      Bundle 'marijnh/tern_for_vim'
+
+    "
+      Bundle "terryma/vim-multiple-cursors"
 
 
-" Tabbable snippets
-Bundle "garbas/vim-snipmate.git"
-Bundle "honza/vim-snippets"
+  " Interface
 
-"File Navigation / Project Management
-Bundle "jistr/vim-nerdtree-tabs.git"
-Bundle "scrooloose/nerdtree.git"
-Bundle "kien/ctrlp.vim"
-Bundle "tpope/vim-vinegar"
-Bundle "justinmk/vim-sneak"
+    " Zoom in/out  of windows (toggle between one window and multi-window)
+      Bundle 'ZoomWin'
 
-"Search
-Bundle "rking/ag.vim"
-Bundle "skwp/vim-git-grep-rails-partial"
-Bundle "tjennings/git-grep-vim"
-Bundle "vim-scripts/IndexedSearch"
-Bundle "nelstrom/vim-visual-star-search"
+    " The ultimate vim statusline utility
+    " Bundle 'Lokaltog/vim-powerline'
 
-" General vim improvements
-Bundle "chrisbra/NrrwRgn"
-Bundle "MarcWeber/vim-addon-mw-utils.git"
-Bundle "bogado/file-line.git"
-Bundle "majutsushi/tagbar.git"
-Bundle "mattn/webapi-vim.git"
-Bundle "scrooloose/syntastic.git"
-Bundle "sjl/gundo.vim"
-Bundle "skwp/YankRing.vim"
-Bundle "skwp/greplace.vim"
-Bundle "tomtom/tlib_vim.git"
-Bundle "tpope/vim-abolish"
-Bundle "tpope/vim-endwise.git"
-Bundle "tpope/vim-ragtag"
-Bundle "tpope/vim-repeat.git"
-Bundle "tpope/vim-surround.git"
-Bundle "tpope/vim-unimpaired"
-Bundle "vim-scripts/AnsiEsc.vim.git"
-Bundle "vim-scripts/AutoTag.git"
-Bundle "vim-scripts/lastpos.vim"
-Bundle "vim-scripts/sudo.vim"
-Bundle "xsunsmile/showmarks.git"
-Bundle "terryma/vim-multiple-cursors"
-Bundle "goldfeld/ctrlr.vim"
+  " Other
+    " Interpret a file by function and cache file automatically
+      Bundle "MarcWeber/vim-addon-mw-utils.git"
 
-" Session Management
-"vim-misc is required for vim-session
-" Bundle "xolox/vim-misc"
-" Bundle "xolox/vim-session"
-" Bundle "Keithbsmiley/investigate.vim"
+    " Dependency for vim-snippets
+      Bundle "tomtom/tlib_vim.git"
 
-" Text objects
-" Bundle "austintaylor/vim-indentobject"
-" Bundle "bootleq/vim-textobj-rubysymbol"
-" Bundle "coderifous/textobj-word-column.vim"
-" Bundle "kana/vim-textobj-datetime"
-" Bundle "kana/vim-textobj-entire"
-" Bundle "kana/vim-textobj-function"
-" Bundle "kana/vim-textobj-user"
-" Bundle "lucapette/vim-textobj-underscore"
-" Bundle "nathanaelkane/vim-indent-guides"
-" Bundle "nelstrom/vim-textobj-rubyblock"
-" Bundle "thinca/vim-textobj-function-javascript"
-" Bundle "vim-scripts/argtextobj.vim"
+    " Tabbable snippets
+      Bundle "garbas/vim-snipmate.git"
+
+    " Many snippets
+      Bundle "honza/vim-snippets"
+
+    " Git wrapper with diff and merge compabilities
+      Bundle 'tpope/vim-fugitive'
+
+    " Enable repeating supported plugin maps with '.'
+      Bundle 'tpope/vim-repeat'
+
+    " Syntax checking hacks for vim
+      Bundle 'scrooloose/syntastic'
+
+    " Vim plugin that displays tags in a window, ordered by class etc
+      Bundle 'majutsushi/tagbar'
+
+    " Show 'Match 123 of 456 /search term/' in Vim searches
+      Bundle 'henrik/vim-indexed-search'
+
+    " Preview markdown documents in the browser from Vim
+      Bundle 'nelstrom/vim-markdown-preview'
+
+    " A start screen for Vim
+      Bundle 'mhinz/vim-startify'
+
+      Bundle "bogado/file-line.git"
+      Bundle "skwp/greplace.vim"
+      Bundle "Townk/vim-autoclose"
+      Bundle "vim-scripts/sudo.vim"
+      Bundle "goldfeld/ctrlr.vim"
 
 " Cosmetics, color scheme, Powerline...
-Bundle "chrisbra/color_highlight.git"
-Bundle "skwp/vim-colors-solarized"
-Bundle "itchyny/lightline.vim"
-Bundle "vim-scripts/TagHighlight.git"
-Bundle "bogado/file-line.git"
-Bundle "jby/tmux.vim.git"
-Bundle "morhetz/gruvbox"
 
+  "
+    Bundle "altercation/vim-colors-solarized"
 
+  "
+    Bundle "morhetz/gruvbox"
 
-" Customization
-" The plugins listed in ~/.vim/.vundles.local will be added here to
-" allow the user to add vim plugins to yadr without the need for a fork.
-if filereadable(expand("~/.yadr/vim/.vundles.local"))
-  source ~/.yadr/vim/.vundles.local
-endif
+    Bundle "itchyny/lightline.vim"
+
+    Bundle "vim-scripts/TagHighlight.git"
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on

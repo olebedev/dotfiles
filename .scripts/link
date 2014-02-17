@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+for i in `ls ..`
+  do
+    if [ ! -e $HOME/../$i ]
+      then
+        ln -s `pwd`/../$i $HOME/.$i
+      fi
+  done
