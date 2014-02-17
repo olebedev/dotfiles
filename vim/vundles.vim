@@ -71,13 +71,13 @@ Bundle "gmarik/vundle"
 
   " File Navigation / Editing/ Project Management
 
-    " 
+    "
       Bundle "jistr/vim-nerdtree-tabs.git"
 
     "
       Bundle "scrooloose/nerdtree.git"
 
-    " 
+    "
       Bundle "justinmk/vim-sneak"
 
     " Rename, delete, save and other useful bindings
@@ -133,9 +133,9 @@ Bundle "gmarik/vundle"
       Bundle 'tpope/vim-surround'
 
     " Perform all your vim insert mode completions with Tab
-      " Bundle "ervandew/supertab"
-      Bundle "Shougo/neocomplete.git"
-      " Bundle "Shougo/echodoc.vim"
+      Bundle 'ervandew/supertab'
+      " Bundle 'Shougo/neocomplete.git'
+      " Bundle 'Shougo/echodoc.vim'
       " Bundle 'AutoComplPop'
       " Bundle 'Valloric/YouCompleteMe'
 
@@ -164,6 +164,9 @@ Bundle "gmarik/vundle"
     " The ultimate vim statusline utility
     " Bundle 'Lokaltog/vim-powerline'
 
+    " Tmux
+    Bundle 'benmills/vimux'
+
   " Other
     " Interpret a file by function and cache file automatically
       Bundle "MarcWeber/vim-addon-mw-utils.git"
@@ -172,10 +175,10 @@ Bundle "gmarik/vundle"
       Bundle "tomtom/tlib_vim.git"
 
     " Tabbable snippets
-      Bundle "garbas/vim-snipmate.git"
+      Bundle 'garbas/vim-snipmate.git'
 
     " Many snippets
-      Bundle "honza/vim-snippets"
+      Bundle 'honza/vim-snippets'
 
     " Git wrapper with diff and merge compabilities
       Bundle 'tpope/vim-fugitive'

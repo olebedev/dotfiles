@@ -58,7 +58,7 @@ activate(){
   export PS1="(go:$(basename $GOPATH)) $PS1"
   export PATH=$GOPATH/bin:$PATH
   alias gcd="cd $GOPATH/src/$(basename $GOPATH)"
-  
+
   create() {
     mkdir -p $GOPATH/bin
     mkdir -p $GOPATH/pkg
@@ -86,4 +86,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # [[ -s /Users/olebedev/.nvm/nvm.sh ]] && . /Users/olebedev/.nvm/nvm.sh
 
 
-
+# tmux attach || tmux new
