@@ -24,6 +24,8 @@ nnoremap ; :
 map <leader>re :execute "edit ~/.vimrc"<CR>
 map <leader>rs :execute "source ~/.vimrc"<CR>
 
+" закрытие буфера
+nnoremap <C-c> :bp\|bd #<CR>
 
 " ,# Surround a word with #{ruby interpolation}
 map ,# ysiw#
