@@ -69,6 +69,10 @@ Bundle "gmarik/vundle"
     " Automatic css rules sorting
       Bundle 'miripiruni/CSScomb-for-Vim'
 
+  " Session
+    " Bundle 'xolox/vim-misc'
+    " Bundle 'xolox/vim-session'
+
   " File Navigation / Editing/ Project Management
 
     "
