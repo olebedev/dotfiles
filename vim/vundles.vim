@@ -60,6 +60,9 @@ Bundle "gmarik/vundle"
   " Highlight colors in css files
     Bundle 'ap/vim-css-color'
 
+  " Go to definition fo Golang
+    Bundle 'dgryski/vim-godef'
+
 " Vundle setup
   " Validation and file cleanup
 
