@@ -10,6 +10,7 @@
 " Filetype off is required by vund
 filetype off
 
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -66,153 +67,158 @@ Bundle "gmarik/vundle"
 " Vundle setup
   " Validation and file cleanup
 
-    " Script to remove trailing whitespaces
-      Bundle 'bronson/vim-trailing-whitespace'
+  " Script to remove trailing whitespaces
+  Bundle 'bronson/vim-trailing-whitespace'
 
-    " Automatic css rules sorting
-      Bundle 'miripiruni/CSScomb-for-Vim'
+  " Automatic css rules sorting
+  Bundle 'miripiruni/CSScomb-for-Vim'
 
   " Session
-    " Bundle 'xolox/vim-misc'
-    " Bundle 'xolox/vim-session'
+  " Bundle 'xolox/vim-misc'
+  " Bundle 'xolox/vim-session'
 
   " File Navigation / Editing/ Project Management
 
-    "
-      Bundle "jistr/vim-nerdtree-tabs.git"
+  " File & content search
+  Bundle 'jeetsukumaran/vim-filesearch'
+  "
+  Bundle "jistr/vim-nerdtree-tabs.git"
 
-    "
-      Bundle "scrooloose/nerdtree.git"
+  "
+  Bundle "scrooloose/nerdtree.git"
 
-    "
-      Bundle "justinmk/vim-sneak"
+  "
+  Bundle "justinmk/vim-sneak"
 
-    " Rename, delete, save and other useful bindings
-      Bundle 'tpope/vim-eunuch'
+  " Rename, delete, save and other useful bindings
+  Bundle 'tpope/vim-eunuch'
 
-    " Fuzzy file, buffer, mru, tag, etc finder
-      Bundle 'kien/ctrlp.vim'
+  " Fuzzy file, buffer, mru, tag, etc finder
+  Bundle 'kien/ctrlp.vim'
 
-    " Vim plugin to list, select and switch between buffers
-      Bundle 'jeetsukumaran/vim-buffergator'
+  " Vim plugin to list, select and switch between buffers
+  Bundle 'jeetsukumaran/vim-buffergator'
 
-    " Switch very quickly between your active buffers
-      Bundle 'LustyJuggler'
+  " Switch very quickly between your active buffers
+  Bundle 'LustyJuggler'
 
-    " Delete all the buffers except the current/named buffer
-    " Bundle 'BufOnly.vim'
+  " Delete all the buffers except the current/named buffer
+  " Bundle 'BufOnly.vim'
 
-    " Pairs of handy bracket mappings
-      Bundle 'tpope/vim-unimpaired'
+  " Pairs of handy bracket mappings
+  Bundle 'tpope/vim-unimpaired'
 
-    " Extended % matching for HTML, LaTeX, and many other languages
-      Bundle 'tsaleh/vim-matchit'
+  " Extended % matching for HTML, LaTeX, and many other languages
+  Bundle 'tsaleh/vim-matchit'
 
-    " Easily search for, substitute, and abbreviate multiple variants of a word
-      Bundle 'tpope/vim-abolish'
+  " Easily search for, substitute, and abbreviate multiple variants of a word
+  Bundle 'tpope/vim-abolish'
 
-    " Vim motions on speed!
-      Bundle 'Lokaltog/vim-easymotion'
+  " Vim motions on speed!
+  Bundle 'Lokaltog/vim-easymotion'
 
-    " Camel Case
-      Bundle 'bkad/CamelCaseMotion'
+  " Camel Case
+  Bundle 'bkad/CamelCaseMotion'
 
-    " Plugin for better line numbers
-      Bundle 'myusuf3/numbers.vim'
+  " Plugin for better line numbers
+  Bundle 'myusuf3/numbers.vim'
 
   " Search
 
-    " Ack wrapper
-      Bundle 'mileszs/ack.vim'
+  " Ack wrapper
+  Bundle 'mileszs/ack.vim'
 
-    "
-      Bundle "rking/ag.vim"
+  "
+  Bundle "rking/ag.vim"
 
-    "
-      Bundle "tjennings/git-grep-vim"
+  "
+  Bundle "tjennings/git-grep-vim"
 
-    "
-      Bundle "vim-scripts/IndexedSearch"
+  "
+  Bundle "vim-scripts/IndexedSearch"
 
   " Autocomplete, snippets and batch editing
 
-    " Quoting/parenthesizing made simple
-      Bundle 'tpope/vim-surround'
+  " Quoting/parenthesizing made simple
+  Bundle 'tpope/vim-surround'
 
-    " Perform all your vim insert mode completions with Tab
-      Bundle 'ervandew/supertab'
-      " Bundle 'Shougo/neocomplete.git'
-      " Bundle 'Shougo/echodoc.vim'
-      " Bundle 'AutoComplPop'
-      " Bundle 'Valloric/YouCompleteMe'
+  " Perform all your vim insert mode completions with Tab
+  Bundle 'ervandew/supertab'
+  " Bundle 'Shougo/neocomplete.git'
+  " Bundle 'Shougo/echodoc.vim'
+  " Bundle 'AutoComplPop'
+  " Bundle 'Valloric/YouCompleteMe'
 
-    " Vim script for text filtering and alignment
-      Bundle 'godlygeek/tabular'
+  " Vim script for text filtering and alignment
+  Bundle 'godlygeek/tabular'
 
-    " Commenting plugin
-      Bundle 'tomtom/tcomment_vim'
-      " Bundle 'scrooloose/nerdcommenter'
+  " Commenting plugin
+  Bundle 'tomtom/tcomment_vim'
+  " Bundle 'scrooloose/nerdcommenter'
 
-    " Plugin for editorconfig
-      Bundle 'editorconfig/editorconfig-vim'
+  " Plugin for editorconfig
+  Bundle 'editorconfig/editorconfig-vim'
 
-    " Tern plugin for Vim
-      Bundle 'marijnh/tern_for_vim'
+  " Tern plugin for Vim
+  Bundle 'marijnh/tern_for_vim'
 
-    "
-      Bundle "terryma/vim-multiple-cursors"
+  "
+  Bundle "terryma/vim-multiple-cursors"
 
 
-  " Interface
+" Interface
 
-    " Zoom in/out  of windows (toggle between one window and multi-window)
-      Bundle 'ZoomWin'
+  " Zoom in/out  of windows (toggle between one window and multi-window)
+  Bundle 'ZoomWin'
 
-    " The ultimate vim statusline utility
-    " Bundle 'Lokaltog/vim-powerline'
+  " The ultimate vim statusline utility
+  " Bundle 'Lokaltog/vim-powerline'
 
-    " Tmux
-    Bundle 'benmills/vimux'
+  " Tmux
+  Bundle 'benmills/vimux'
 
-  " Other
-    " Interpret a file by function and cache file automatically
-      Bundle "MarcWeber/vim-addon-mw-utils.git"
+" Other
+  " Interpret a file by function and cache file automatically
+  Bundle "MarcWeber/vim-addon-mw-utils.git"
 
-    " Dependency for vim-snippets
-      Bundle "tomtom/tlib_vim.git"
+  " Dependency for vim-snippets
+  Bundle "tomtom/tlib_vim.git"
 
-    " Tabbable snippets
-      Bundle 'garbas/vim-snipmate.git'
+  " Tabbable snippets
+  Bundle 'garbas/vim-snipmate.git'
 
-    " Many snippets
-      Bundle 'honza/vim-snippets'
+  " Many snippets
+  Bundle 'honza/vim-snippets'
 
-    " Git wrapper with diff and merge compabilities
-      Bundle 'tpope/vim-fugitive'
+  " Git wrapper with diff and merge compabilities
+  Bundle 'tpope/vim-fugitive'
 
-    " Enable repeating supported plugin maps with '.'
-      Bundle 'tpope/vim-repeat'
+  " Enable repeating supported plugin maps with '.'
+  Bundle 'tpope/vim-repeat'
 
-    " Syntax checking hacks for vim
-      Bundle 'scrooloose/syntastic'
+  " Syntax checking hacks for vim
+  Bundle 'scrooloose/syntastic'
 
-    " Vim plugin that displays tags in a window, ordered by class etc
-      Bundle 'majutsushi/tagbar'
+  " Vim plugin that displays tags in a window, ordered by class etc
+  Bundle 'majutsushi/tagbar'
 
-    " Show 'Match 123 of 456 /search term/' in Vim searches
-      Bundle 'henrik/vim-indexed-search'
+  " Show 'Match 123 of 456 /search term/' in Vim searches
+  Bundle 'henrik/vim-indexed-search'
 
-    " Preview markdown documents in the browser from Vim
-      Bundle 'nelstrom/vim-markdown-preview'
+  " Preview markdown documents in the browser from Vim
+  Bundle 'nelstrom/vim-markdown-preview'
 
-    " A start screen for Vim
-      Bundle 'mhinz/vim-startify'
+  " Flavored markdown syntax
+  Bundle 'jtratner/vim-flavored-markdown'
 
-      Bundle "bogado/file-line.git"
-      Bundle "skwp/greplace.vim"
-      Bundle "Townk/vim-autoclose"
-      Bundle "vim-scripts/sudo.vim"
-      Bundle "goldfeld/ctrlr.vim"
+  " A start screen for Vim
+  Bundle 'mhinz/vim-startify'
+
+  Bundle "bogado/file-line.git"
+  Bundle "skwp/greplace.vim"
+  Bundle "Townk/vim-autoclose"
+  Bundle "vim-scripts/sudo.vim"
+  Bundle "goldfeld/ctrlr.vim"
 
 " Cosmetics, color scheme, Powerline...
 
