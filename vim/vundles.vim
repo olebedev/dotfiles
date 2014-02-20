@@ -221,6 +221,8 @@ Bundle "gmarik/vundle"
   Bundle "goldfeld/ctrlr.vim"
 
 " Cosmetics, color scheme, Powerline...
+  " Color themes pack
+    Bundle 'flazz/vim-colorschemes'
 
   "
     Bundle "altercation/vim-colors-solarized"
