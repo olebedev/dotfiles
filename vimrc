@@ -48,6 +48,3 @@ colorscheme gruvbox
 " zenburn
 set bg=dark
 set encoding=utf-8
-
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
