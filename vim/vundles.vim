@@ -31,6 +31,9 @@ Bundle "gmarik/vundle"
   " HTML5 omnicomplete and syntax
     Bundle 'othree/html5.vim'
 
+  " Mustache syntax
+    Bundle 'mustache/vim-mustache-handlebars'
+
   " JavaScript syntax
     Bundle 'pangloss/vim-javascript'
     Bundle 'marijnh/tern_for_vim'
