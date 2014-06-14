@@ -45,11 +45,11 @@ plugins=(git brew bower heroku git github git-flow git-extras node npm sublime c
 source $ZSH/oh-my-zsh.sh
 
 # default go path setup
-MAIN_GOPATH=/usr/local/Cellar/go/1.2/workspace
+MAIN_GOPATH=/usr/local/Cellar/go/1.3beta1/workspace
 MAIN_PATH=$PATH:bin:script:/Users/olebedev/.rbenv/bin:/Users/olebedev/.bin:node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/usr/local/Cellar/go/1.2/libexec/bin:$MAIN_GOPATH/bin
 export PATH=$MAIN_PATH
 export GOPATH=$MAIN_GOPATH
-export GOROOT=/usr/local/Cellar/go/1.2/libexec
+export GOROOT=/usr/local/Cellar/go/1.3beta1/libexec
 
 # goenv functions
 activate(){
