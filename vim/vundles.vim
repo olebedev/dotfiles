@@ -29,7 +29,8 @@ Bundle "gmarik/vundle"
     Bundle 'timcharper/textile.vim'
 
   " HTML5 omnicomplete and syntax
-    Bundle 'othree/html5.vim'
+    " Bundle 'othree/html5.vim'
+    Bundle 'mattn/emmet-vim'
 
   " Mustache syntax
     Bundle 'mustache/vim-mustache-handlebars'
