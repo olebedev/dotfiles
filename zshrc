@@ -43,13 +43,13 @@ ZSH_THEME="cloud"
 plugins=(git brew bower heroku git github git-flow git-extras node npm sublime copydir copyfile)
 
 source $ZSH/oh-my-zsh.sh
-
+GO_VERSION="1.3"
 # default go path setup
-MAIN_GOPATH=/usr/local/Cellar/go/1.3beta1/workspace
-MAIN_PATH=$PATH:bin:script:/Users/olebedev/.rbenv/bin:/Users/olebedev/.bin:node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/usr/local/Cellar/go/1.2/libexec/bin:$MAIN_GOPATH/bin
+MAIN_GOPATH=/usr/local/Cellar/go/$GO_VERSION/workspace
+MAIN_PATH=$PATH:bin:script:/Users/olebedev/.rbenv/bin:/Users/olebedev/.bin:node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/usr/local/Cellar/go/$GO_VERSION/libexec/bin:$MAIN_GOPATH/bin
 export PATH=$MAIN_PATH
 export GOPATH=$MAIN_GOPATH
-export GOROOT=/usr/local/Cellar/go/1.3beta1/libexec
+export GOROOT=/usr/local/Cellar/go/$GO_VERSION/libexec
 
 # goenv functions
 activate(){
@@ -59,12 +59,12 @@ activate(){
   export PATH=$GOPATH/bin:$PATH
   alias gcd="cd $GOPATH/src/$(basename $GOPATH)"
 
-  create() {
-    mkdir -p $GOPATH/bin
-    mkdir -p $GOPATH/pkg
-    mkdir -p $GOPATH/src/$(basename $GOPATH)
-    echo "package main" > $GOPATH/src/$(basename $GOPATH)/$(basename $GOPATH).go
-  }
+  # create() {
+  #   mkdir -p $GOPATH/bin
+  #   mkdir -p $GOPATH/pkg
+  #   mkdir -p $GOPATH/src/$(basename $GOPATH)
+  #   echo "package main" > $GOPATH/src/$(basename $GOPATH)/$(basename $GOPATH).go
+  # }
 
   deactivate() {
     echo "Goodbye! =) Now, you in \`$(pwd)\` directory."
@@ -82,8 +82,5 @@ activate(){
 unsetopt correct_all
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# [[ -s /Users/olebedev/.nvm/nvm.sh ]] && . /Users/olebedev/.nvm/nvm.sh
-
 
 # tmux attach || tmux new
