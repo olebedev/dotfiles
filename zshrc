@@ -43,10 +43,10 @@ ZSH_THEME="cloud"
 plugins=(git brew bower heroku git github git-flow git-extras node npm sublime copydir copyfile)
 
 source $ZSH/oh-my-zsh.sh
-GO_VERSION="1.3"
+GO_VERSION="1.3.1"
 # default go path setup
-MAIN_GOPATH=/usr/local/Cellar/go/$GO_VERSION/workspace
-MAIN_PATH=$PATH:bin:script:/Users/olebedev/.rbenv/bin:/Users/olebedev/.bin:node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/usr/local/Cellar/go/$GO_VERSION/libexec/bin:$MAIN_GOPATH/bin
+MAIN_GOPATH=/usr/local/Cellar/go/workspace
+MAIN_PATH=$MAIN_GOPATH/bin:/usr/local/heroku/bin:$PATH
 export PATH=$MAIN_PATH
 export GOPATH=$MAIN_GOPATH
 export GOROOT=/usr/local/Cellar/go/$GO_VERSION/libexec
@@ -81,6 +81,5 @@ activate(){
 # Customize to your needs...
 unsetopt correct_all
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 # tmux attach || tmux new
