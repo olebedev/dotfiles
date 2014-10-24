@@ -41,10 +41,10 @@ endif
 colorscheme gruvbox
 " 256-grayvim
 " Monokai
-" asu1dark
-" blazer
-" jammy
 " jellybeans
 " zenburn
+" Tomorrow-Night
+" twilight256
+
 set bg=dark
 set encoding=utf-8

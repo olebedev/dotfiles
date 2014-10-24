@@ -46,7 +46,7 @@ source $ZSH/oh-my-zsh.sh
 GO_VERSION="1.3.1"
 # default go path setup
 MAIN_GOPATH=/usr/local/Cellar/go/workspace
-MAIN_PATH=$MAIN_GOPATH/bin:/usr/local/heroku/bin:$PATH
+MAIN_PATH=$MAIN_GOPATH/bin:/usr/local/Cellar/go/$GO_VERSION/libexec/bin:/usr/local/heroku/bin:$PATH
 export PATH=$MAIN_PATH
 export GOPATH=$MAIN_GOPATH
 export GOROOT=/usr/local/Cellar/go/$GO_VERSION/libexec
