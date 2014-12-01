@@ -234,14 +234,15 @@ Bundle "gmarik/vundle"
     Bundle 'flazz/vim-colorschemes'
 
   "
-    Bundle "altercation/vim-colors-solarized"
+    Bundle 'altercation/vim-colors-solarized'
 
   "
-    Bundle "morhetz/gruvbox"
+    Bundle 'morhetz/gruvbox'
 
-    Bundle "itchyny/lightline.vim"
+    Bundle 'itchyny/lightline.vim'
 
-    Bundle "vim-scripts/TagHighlight.git"
+    Bundle 'vim-scripts/TagHighlight.git'
+    Bundle 'sjl/badwolf'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on

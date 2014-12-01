@@ -44,7 +44,8 @@ colorscheme gruvbox
 " jellybeans
 " zenburn
 " Tomorrow-Night
-" twilight256
+" colorscheme twilight256
+" colorscheme twilight
 
 set bg=dark
 set encoding=utf-8
