@@ -69,10 +69,6 @@ Bundle "gmarik/vundle"
 
   " Go to definition fo Golang
     Bundle 'fatih/vim-go'
-    Bundle 'dgryski/vim-godef'
-
-  " Golang impl
-    Bundle 'rhysd/vim-go-impl'
 
 " Vundle setup
   " Validation and file cleanup
