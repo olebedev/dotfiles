@@ -44,7 +44,7 @@ plugins=(git brew bower heroku git github git-flow git-extras node npm sublime c
 
 source $ZSH/oh-my-zsh.sh
 # GO_VERSION="1.3.1"
-GO_VERSION="1.4rc1"
+GO_VERSION="1.4.1"
 # default go path setup
 MAIN_GOPATH=/usr/local/Cellar/go/workspace
 MAIN_PATH=$MAIN_GOPATH/bin:/usr/local/Cellar/go/$GO_VERSION/libexec/bin:/usr/local/heroku/bin:$PATH
@@ -54,18 +54,10 @@ export GOROOT=/usr/local/Cellar/go/$GO_VERSION/libexec
 
 # goenv functions
 activate(){
-  export GOPATH="$(cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd)"
+  export GOPATH=`pwd`
   export OLDPS1=$PS1
   export PS1="(go:$(basename $GOPATH)) $PS1"
   export PATH=$GOPATH/bin:$PATH
-  alias gcd="cd $GOPATH/src/$(basename $GOPATH)"
-
-  # create() {
-  #   mkdir -p $GOPATH/bin
-  #   mkdir -p $GOPATH/pkg
-  #   mkdir -p $GOPATH/src/$(basename $GOPATH)
-  #   echo "package main" > $GOPATH/src/$(basename $GOPATH)/$(basename $GOPATH).go
-  # }
 
   deactivate() {
     echo "Goodbye! =) Now, you in \`$(pwd)\` directory."
@@ -73,9 +65,7 @@ activate(){
     export GOPATH=$MAIN_GOPATH
     export PATH=$MAIN_PATH
     unset OLDPS1
-    unalias gcd
     unset deactivate
-    unset create
   }
 }
 

@@ -68,6 +68,7 @@ Bundle "gmarik/vundle"
     Bundle 'ap/vim-css-color'
 
   " Go to definition fo Golang
+    Bundle 'fatih/vim-go'
     Bundle 'dgryski/vim-godef'
 
   " Golang impl
