@@ -226,6 +226,9 @@ Bundle "gmarik/vundle"
   Bundle "vim-scripts/sudo.vim"
   Bundle "goldfeld/ctrlr.vim"
 
+  " Hackernews plugin
+  Bundle 'ryanss/vim-hackernews'
+
 " Cosmetics, color scheme, Powerline...
   " Color themes pack
     Bundle 'flazz/vim-colorschemes'
