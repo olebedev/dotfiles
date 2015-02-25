@@ -19,6 +19,9 @@ Bundle "gmarik/vundle"
 
 " Syntax highlighting and indent
 
+  " Stylus
+    Bundle "wavded/vim-stylus"
+
   " Indention lines
     Bundle "Yggdroot/indentLine"
 
