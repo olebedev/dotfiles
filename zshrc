@@ -74,3 +74,8 @@ unsetopt correct_all
 ### Added by the Heroku Toolbelt
 
 # tmux attach || tmux new
+
+# virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/pro
+source /usr/local/bin/virtualenvwrapper.sh
