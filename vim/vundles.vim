@@ -40,7 +40,7 @@ Bundle "gmarik/vundle"
 
   " JavaScript syntax
     Bundle 'pangloss/vim-javascript'
-    Bundle 'marijnh/tern_for_vim'
+    " Bundle 'marijnh/tern_for_vim'
     Bundle 'mxw/vim-jsx'
 
   " CoffeeScript syntax

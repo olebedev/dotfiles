@@ -16,6 +16,7 @@
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [core]
 	excludesfile = /Users/olebedev/.gitignore_global
+	editor = vim
 [push]
 	default = simple
 [filter "media"]
