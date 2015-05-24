@@ -38,7 +38,7 @@ if filereadable(expand("~/.vim/settings.vim"))
 endif
 
 " ================ My Settings ======================
-colorscheme gruvbox
+" colorscheme gruvbox
 " 256-grayvim
 " Monokai
 " jellybeans
@@ -46,6 +46,7 @@ colorscheme gruvbox
 " Tomorrow-Night
 " colorscheme twilight256
 " colorscheme twilight
+colorscheme hybrid
 
-set bg=dark
+" set bg=dark
 set encoding=utf-8
