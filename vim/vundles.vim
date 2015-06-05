@@ -199,6 +199,9 @@ Bundle "gmarik/vundle"
   " Many snippets
   Bundle 'honza/vim-snippets'
 
+  " React snippets
+  Bundle 'justinj/vim-react-snippets'
+
   " Git wrapper with diff and merge compabilities
   Bundle 'tpope/vim-fugitive'
 
