@@ -14,6 +14,7 @@
 	in = "!git remote update -p; git log ..@{u}"
 	out = log @{u}..
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 [core]
 	excludesfile = /Users/olebedev/.gitignore_global
 	editor = vim
@@ -29,7 +30,6 @@
 	prompt = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
