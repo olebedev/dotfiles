@@ -232,9 +232,6 @@ Bundle "gmarik/vundle"
   Bundle "vim-scripts/sudo.vim"
   Bundle "goldfeld/ctrlr.vim"
 
-  " Hackernews plugin
-  Bundle 'ryanss/vim-hackernews'
-
 " Cosmetics, color scheme, Powerline...
   " Color themes pack
     Bundle 'flazz/vim-colorschemes'
@@ -249,6 +246,12 @@ Bundle "gmarik/vundle"
 
     Bundle 'vim-scripts/TagHighlight.git'
     Bundle 'sjl/badwolf'
+
+" Misc
+  " Hackernews plugin
+  Bundle 'ryanss/vim-hackernews'
+  " Wakatime plugin ot track the time at vim
+  Bundle 'wakatime/vim-wakatime'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
