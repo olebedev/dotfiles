@@ -23,20 +23,20 @@ Bundle "gmarik/vundle"
     Bundle "wavded/vim-stylus"
 
   " Indention lines
-    Bundle "Yggdroot/indentLine"
+    " Bundle "Yggdroot/indentLine"
 
   " Markdown syntax
     Bundle 'tpope/vim-markdown'
 
   " Textile syntax
-    Bundle 'timcharper/textile.vim'
+    " Bundle 'timcharper/textile.vim'
 
   " HTML5 omnicomplete and syntax
     Bundle 'othree/html5.vim'
     Bundle 'mattn/emmet-vim'
 
   " Mustache syntax
-    Bundle 'mustache/vim-mustache-handlebars'
+    " Bundle 'mustache/vim-mustache-handlebars'
 
   " JavaScript syntax
     Bundle 'pangloss/vim-javascript'
@@ -44,16 +44,16 @@ Bundle "gmarik/vundle"
     Bundle 'mxw/vim-jsx'
 
   " CoffeeScript syntax
-    Bundle 'kchmck/vim-coffee-script'
+    " Bundle 'kchmck/vim-coffee-script'
 
   " LiveScript syntax
-    Bundle "gkz/vim-ls.git"
+    " Bundle "gkz/vim-ls.git"
 
   " Node.js syntax
-    Bundle 'guileen/vim-node'
+    " Bundle 'guileen/vim-node'
 
   " Less syntax
-    Bundle 'groenewege/vim-less'
+    " Bundle 'groenewege/vim-less'
 
   " CSS3 syntax extension for built-in CSS module
     Bundle 'hail2u/vim-css3-syntax'
@@ -61,16 +61,19 @@ Bundle "gmarik/vundle"
   " Fixed CSS indent plugin
     Bundle 'miripiruni/vim-better-css-indent'
 
+  " Highlight colors in css files
+    Bundle 'ap/vim-css-color'
+
+  " Highlight scss syntax
+    Bundle 'cakebaker/scss-syntax.vim'
+
   " Git config syntax
     Bundle 'tpope/vim-git'
 
   " Tmux config vim syntax
     Bundle 'zaiste/tmux.vim'
 
-  " Highlight colors in css files
-    Bundle 'ap/vim-css-color'
-
-  " Go to definition fo Golang
+  " Golang ultimate
     Bundle 'fatih/vim-go'
 
 " Vundle setup
