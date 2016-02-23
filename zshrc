@@ -43,14 +43,12 @@ ZSH_THEME="cloud"
 plugins=(git brew bower heroku git github git-flow git-extras node npm sublime copydir copyfile)
 
 source $ZSH/oh-my-zsh.sh
-GO_VERSION="current"
 # default go path setup
 MAIN_GOPATH=/usr/local/Cellar/go/workspace
 MAIN_PATH=$MAIN_GOPATH/bin:/usr/local/heroku/bin:$PATH
 export PATH=$MAIN_PATH
 export GOPATH=$MAIN_GOPATH
 export GO15VENDOREXPERIMENT=1
-export GOROOT=/usr/local/Cellar/go/$GO_VERSION/libexec
 
 # goenv functions
 activate(){
