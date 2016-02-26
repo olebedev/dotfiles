@@ -47,7 +47,7 @@ Bundle "gmarik/vundle"
     " Bundle 'kchmck/vim-coffee-script'
 
   " LiveScript syntax
-    " Bundle "gkz/vim-ls.git"
+    Bundle "gkz/vim-ls.git"
 
   " Node.js syntax
     " Bundle 'guileen/vim-node'
