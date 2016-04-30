@@ -24,6 +24,10 @@ set pastetoggle=<F2>            "Ставка без перефигачиван�
 
 let loaded_matchparen=1         "Перестает прыгать на парную скобку, показывая где она.
                                 "+100 к скорости
+set mouse=a                     " enable mouse bindings
+                                " see: https://bitheap.org/mouseterm/
+
+
 
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundle.vim

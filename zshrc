@@ -50,7 +50,7 @@ export PATH=$MAIN_PATH
 export GOPATH=$MAIN_GOPATH
 export GO15VENDOREXPERIMENT=1
 
-# goenv functions
+# goenv functions DEPRECATED
 activate(){
   export GOPATH=`pwd`
   export OLDPS1=$PS1
