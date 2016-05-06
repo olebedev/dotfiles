@@ -26,7 +26,9 @@ let loaded_matchparen=1         "Перестает прыгать на парн
                                 "+100 к скорости
 set mouse=a                     " enable mouse bindings
                                 " see: https://bitheap.org/mouseterm/
-
+vnoremap <C-c> "*y
+                                " ^ enable Ctrl+C for selected in visual mode
+                                " text
 
 
 " =============== Vundle Initialization ===============
