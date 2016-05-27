@@ -45,7 +45,7 @@ plugins=(git brew bower heroku git github git-flow git-extras node npm sublime c
 source $ZSH/oh-my-zsh.sh
 # default go path setup
 MAIN_GOPATH=/usr/local/Cellar/go/workspace
-MAIN_PATH=$MAIN_GOPATH/bin:/usr/local/heroku/bin:$PATH
+MAIN_PATH=$MAIN_GOPATH/bin:$PATH
 export PATH=$MAIN_PATH
 export GOPATH=$MAIN_GOPATH
 export GO15VENDOREXPERIMENT=1
@@ -77,3 +77,6 @@ unsetopt correct_all
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/pro
 source /usr/local/bin/virtualenvwrapper.sh
+
+# wercker
+eval "$(docker-machine env dev)"
