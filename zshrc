@@ -74,6 +74,7 @@ unsetopt correct_all
 # tmux attach || tmux new
 
 # virtualenv
+export LC_ALL=C
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/pro
 source /usr/local/bin/virtualenvwrapper.sh
