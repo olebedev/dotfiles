@@ -81,3 +81,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # wercker
 eval "$(docker-machine env dev)"
+
+# direnv - https://github.com/direnv/direnv
+eval "$(direnv hook zsh)"
