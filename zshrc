@@ -46,6 +46,9 @@ source $ZSH/oh-my-zsh.sh
 # default go path setup
 MAIN_GOPATH=/usr/local/Cellar/go/workspace
 MAIN_PATH=$MAIN_GOPATH/bin:$PATH
+# android
+MAIN_PATH=~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:$MAIN_PATH
+
 export PATH=$MAIN_PATH
 export GOPATH=$MAIN_GOPATH
 export GO15VENDOREXPERIMENT=1
@@ -84,3 +87,6 @@ eval "$(docker-machine env dev)"
 
 # direnv - https://github.com/direnv/direnv
 eval "$(direnv hook zsh)"
+
+# android
+export ANDROID_HOME=~/Library/Android/sdk
