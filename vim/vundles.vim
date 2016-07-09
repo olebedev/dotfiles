@@ -55,7 +55,7 @@ Bundle "gmarik/vundle"
     " Bundle 'guileen/vim-node'
 
   " Less syntax
-    " Bundle 'groenewege/vim-less'
+    Bundle 'groenewege/vim-less'
 
   " CSS3 syntax extension for built-in CSS module
     Bundle 'hail2u/vim-css3-syntax'
