@@ -90,3 +90,5 @@ eval "$(direnv hook zsh)"
 
 # android
 export ANDROID_HOME=~/Library/Android/sdk
+# RN
+export REACT_EDITOR="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
