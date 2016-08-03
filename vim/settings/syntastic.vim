@@ -8,3 +8,7 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_quiet_messages = {'level': 'warnings'}
 " use less-lint
 let g:syntastic_less_use_less_lint=1
+" use eslint
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
+let g:syntastic_javascript_eslint_args = '--fix'
