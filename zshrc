@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="cloud"
+ZSH_THEME="sorin"
 
 # Example aliases
 # alias zshconfig="subl ~/.zshrc"
@@ -78,15 +78,15 @@ unsetopt correct_all
 
 # virtualenv
 # export LC_ALL=C
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/pro
-source /usr/local/bin/virtualenvwrapper.sh
+# export WORKON_HOME=$HOME/.virtualenvs
+# export PROJECT_HOME=$HOME/pro
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # wercker
-eval "$(docker-machine env dev)"
+# eval "$(docker-machine env dev)"
 
 # direnv - https://github.com/direnv/direnv
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 # android
 export ANDROID_HOME=~/Library/Android/sdk
