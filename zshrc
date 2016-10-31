@@ -93,3 +93,8 @@ unsetopt correct_all
 export ANDROID_HOME=~/Library/Android/sdk
 # RN
 export REACT_EDITOR="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh ]

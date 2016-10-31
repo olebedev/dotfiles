@@ -13,7 +13,7 @@ set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 set hidden                      "background buffers
-syntax on                       "turn on syntax highlighting
+syntax enable                   "turn on syntax highlighting
 let mapleader=","
 
 set t_Co=256                    "Colors
@@ -44,15 +44,15 @@ if filereadable(expand("~/.vim/settings.vim"))
 endif
 
 " ================ My Settings ======================
+set background=dark
 " colorscheme gruvbox
-" 256-grayvim
-" Monokai
-" jellybeans
-" zenburn
-" Tomorrow-Night
+" colorscheme 256-grayvim
+" colorscheme Monokai
+" colorscheme jellybeans
+" colorscheme zenburn
+" colorscheme Tomorrow-Night
 " colorscheme twilight256
 " colorscheme twilight
 colorscheme hybrid
 
-" set bg=dark
 set encoding=utf-8

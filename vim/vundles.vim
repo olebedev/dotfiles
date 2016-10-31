@@ -122,9 +122,6 @@ Bundle "gmarik/vundle"
   " Pairs of handy bracket mappings
   Bundle 'tpope/vim-unimpaired'
 
-  " Extended % matching for HTML, LaTeX, and many other languages
-  Bundle 'tsaleh/vim-matchit'
-
   " Easily search for, substitute, and abbreviate multiple variants of a word
   Bundle 'tpope/vim-abolish'
 
@@ -150,6 +147,9 @@ Bundle "gmarik/vundle"
 
   "
   Bundle "vim-scripts/IndexedSearch"
+
+  " a general-purpose command-line fuzzy finder
+  Bundle "junegunn/fzf"
 
   " Autocomplete, snippets and batch editing
 
