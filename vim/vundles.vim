@@ -139,14 +139,14 @@ Bundle "gmarik/vundle"
   " Ack wrapper
   Bundle 'mileszs/ack.vim'
 
-  "
-  Bundle "rking/ag.vim"
+  " Deprecated use ack.vim instead
+  " Bundle "rking/ag.vim"
 
   "
-  Bundle "tjennings/git-grep-vim"
+  " Bundle "tjennings/git-grep-vim"
 
   "
-  Bundle "vim-scripts/IndexedSearch"
+  " Bundle "vim-scripts/IndexedSearch"
 
   " a general-purpose command-line fuzzy finder
   Bundle "junegunn/fzf"
@@ -174,7 +174,7 @@ Bundle "gmarik/vundle"
   Bundle 'editorconfig/editorconfig-vim'
 
   " Tern plugin for Vim
-  Bundle 'marijnh/tern_for_vim'
+  " Bundle 'marijnh/tern_for_vim'
 
   "
   Bundle "terryma/vim-multiple-cursors"

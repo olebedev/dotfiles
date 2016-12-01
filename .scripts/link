@@ -7,3 +7,6 @@ for i in `ls ..`
         ln -s `pwd`/../$i $HOME/.$i
       fi
   done
+
+mkdir $HOME/.config || true
+ln -s `pwd`/../.nvim $HOME/.config/nvim
