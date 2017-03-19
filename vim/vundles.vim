@@ -77,6 +77,7 @@ Bundle "gmarik/vundle"
 
   " Golang ultimate
     Bundle 'fatih/vim-go'
+    Bundle 'jodosha/vim-godebug'
 
 " Vundle setup
   " Validation and file cleanup

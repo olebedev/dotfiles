@@ -18,6 +18,7 @@
 [core]
 	excludesfile = /Users/olebedev/.gitignore_global
 	editor = vim
+	quotepath = false
 [push]
 	default = simple
 [filter "media"]

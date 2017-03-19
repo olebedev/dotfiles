@@ -46,7 +46,7 @@ plugins=(git brew bower heroku git github git-flow git-extras node npm sublime c
 source $ZSH/oh-my-zsh.sh
 # default go path setup
 MAIN_GOPATH=/usr/local/Cellar/go/workspace
-MAIN_PATH=$MAIN_GOPATH/bin:$PATH
+MAIN_PATH=$MAIN_GOPATH/bin:$HOME/.cargo/bin:$PATH
 # android
 MAIN_PATH=~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:$MAIN_PATH
 
@@ -98,3 +98,6 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh ]
+
+# https://github.com/tj/mmake
+# alias make=mmake

@@ -5,4 +5,4 @@ for i in `ls ..`
     rm $HOME/.$i
   done
 
-cd $HOME/.config && rm ./nvim || true
+# cd $HOME/.config && rm ./nvim || true

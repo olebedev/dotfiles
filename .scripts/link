@@ -8,5 +8,5 @@ for i in `ls ..`
       fi
   done
 
-mkdir $HOME/.config || true
-ln -s `pwd`/../.nvim $HOME/.config/nvim
+# mkdir $HOME/.config || true
+# ln -s `pwd`/../.nvim $HOME/.config/nvim
