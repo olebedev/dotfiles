@@ -9,7 +9,7 @@ let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#max_list = 10
 
 " Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 2
+let g:neocomplete#sources#syntax#min_keyword_length = 5
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 " Map standard Ctrl-N completion to Cmd-Space
@@ -43,7 +43,8 @@ let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType javascript setlocal omnifunc=flowcomplete#Complete
+" autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+" autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+autocmd FileType go NeoCompleteLock

@@ -40,13 +40,9 @@ Bundle "gmarik/vundle"
 
   " JavaScript syntax
     Bundle 'pangloss/vim-javascript'
+    Bundle 'flowtype/vim-flow'
   " Bundle 'marijnh/tern_for_vim'
     Bundle 'mxw/vim-jsx'
-  " Advanced formatting
-    Bundle 'maksimr/vim-jsbeautify'
-
-  " CoffeeScript syntax
-    " Bundle 'kchmck/vim-coffee-script'
 
   " LiveScript syntax
     Bundle "gkz/vim-ls.git"
@@ -77,7 +73,7 @@ Bundle "gmarik/vundle"
 
   " Golang ultimate
     Bundle 'fatih/vim-go'
-    Bundle 'jodosha/vim-godebug'
+    " Bundle 'jodosha/vim-godebug'
 
 " Vundle setup
   " Validation and file cleanup
@@ -159,7 +155,7 @@ Bundle "gmarik/vundle"
 
   " Perform all your vim insert mode completions with Tab
   Bundle 'ervandew/supertab'
-  " Bundle 'Shougo/neocomplete.git'
+  Bundle 'Shougo/neocomplete.vim'
   " Bundle 'Shougo/echodoc.vim'
   " Bundle 'AutoComplPop'
   " Bundle 'Valloric/YouCompleteMe'
