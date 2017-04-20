@@ -155,7 +155,7 @@ Bundle "gmarik/vundle"
 
   " Perform all your vim insert mode completions with Tab
   Bundle 'ervandew/supertab'
-  Bundle 'Shougo/neocomplete.vim'
+  " Bundle 'Shougo/neocomplete.vim'
   " Bundle 'Shougo/echodoc.vim'
   " Bundle 'AutoComplPop'
   " Bundle 'Valloric/YouCompleteMe'

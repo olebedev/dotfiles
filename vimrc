@@ -31,7 +31,7 @@ set mouse=a                     " enable mouse bindings
 vnoremap <C-c> "*y
                                 " ^ enable Ctrl+C for selected in visual mode
                                 " text
-
+inoremap jj <Esc>
 
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundle.vim

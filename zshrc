@@ -101,3 +101,5 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 
 # https://github.com/tj/mmake
 # alias make=mmake
+EMULATOR_DIR="$(dirname "$(which emulator)")"
+function emulator { cd $EMULATOR_DIR && ./emulator "$@"; }
