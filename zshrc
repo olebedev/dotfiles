@@ -103,3 +103,7 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 # alias make=mmake
 EMULATOR_DIR="$(dirname "$(which emulator)")"
 function emulator { cd $EMULATOR_DIR && ./emulator "$@"; }
+
+# set up completions
+fpath=(~/.zsh/completions $fpath)
+autoload -U compinit && compinit
