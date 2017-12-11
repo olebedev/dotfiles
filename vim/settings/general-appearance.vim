@@ -26,3 +26,4 @@ else
   let g:CSApprox_loaded = 1
 endif
 
+set belloff=all

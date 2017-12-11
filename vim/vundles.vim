@@ -41,8 +41,8 @@ Bundle "gmarik/vundle"
   " JavaScript syntax
     Bundle 'pangloss/vim-javascript'
     Bundle 'flowtype/vim-flow'
-  " Bundle 'marijnh/tern_for_vim'
     Bundle 'mxw/vim-jsx'
+    " Bundle 'ternjs/tern_for_vim'
 
   " LiveScript syntax
     Bundle "gkz/vim-ls.git"

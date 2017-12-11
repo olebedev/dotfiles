@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="ys"
-ZSH_THEME="geometry" # https://github.com/frmendes/geometry
+ZSH_THEME="geometry/geometry"
 
 # Example aliases
 # alias zshconfig="subl ~/.zshrc"
@@ -44,6 +44,9 @@ ZSH_THEME="geometry" # https://github.com/frmendes/geometry
 plugins=(git brew bower heroku git github git-flow git-extras node npm sublime copydir copyfile)
 
 source $ZSH/oh-my-zsh.sh
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+
 # default go path setup
 MAIN_GOPATH=/usr/local/Cellar/go/workspace
 MAIN_PATH=$MAIN_GOPATH/bin:$HOME/.cargo/bin:$PATH
