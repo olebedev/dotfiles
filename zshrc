@@ -51,7 +51,7 @@ source $ZPLUG_HOME/init.zsh
 MAIN_GOPATH=/usr/local/Cellar/go/workspace
 MAIN_PATH=$MAIN_GOPATH/bin:$HOME/.cargo/bin:$PATH
 # android
-MAIN_PATH=~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:$MAIN_PATH
+MAIN_PATH=/usr/local/opt/gettext/bin:~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:$MAIN_PATH
 
 export PATH=$MAIN_PATH
 export GOPATH=$MAIN_GOPATH
