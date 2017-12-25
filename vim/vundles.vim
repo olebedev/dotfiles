@@ -43,6 +43,7 @@ Bundle "gmarik/vundle"
     Bundle 'flowtype/vim-flow'
     Bundle 'mxw/vim-jsx'
     " Bundle 'ternjs/tern_for_vim'
+    Bundle 'prettier/vim-prettier'
 
   " LiveScript syntax
     Bundle "gkz/vim-ls.git"
