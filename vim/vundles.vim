@@ -44,6 +44,8 @@ Bundle "gmarik/vundle"
     Bundle 'mxw/vim-jsx'
     " Bundle 'ternjs/tern_for_vim'
     Bundle 'prettier/vim-prettier'
+    " Bundle 'prabirshrestha/async.vim'
+    " Bundle 'prabirshrestha/vim-lsp'
 
   " LiveScript syntax
     Bundle "gkz/vim-ls.git"
@@ -212,7 +214,8 @@ Bundle "gmarik/vundle"
   Bundle 'tpope/vim-repeat'
 
   " Syntax checking hacks for vim
-  Bundle 'scrooloose/syntastic'
+  " Bundle 'scrooloose/syntastic'
+  Bundle 'w0rp/ale'
 
   " Vim plugin that displays tags in a window, ordered by class etc
   Bundle 'majutsushi/tagbar'
