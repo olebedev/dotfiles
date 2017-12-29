@@ -99,6 +99,8 @@ Bundle "gmarik/vundle"
 " Interface
   " Zoom in/out  of windows (toggle between one window and multi-window)
   Bundle 'ZoomWin'
+  " Bundle 'zefei/vim-wintabs'
+  Bundle 'ap/vim-buftabline'
 
 " Other
   " Interpret a file by function and cache file automatically
