@@ -33,6 +33,9 @@ vnoremap <C-c> "*y
                                 " text
 inoremap jj <Esc>
 
+set exrc                        " Allows for per-project configuration files
+set secure                      " Disable unsafe commands in your project-specific .vimrc files
+
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundle.vim
 " Use Vundle plugin to manage all other plugins

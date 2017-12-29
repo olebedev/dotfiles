@@ -97,9 +97,8 @@ Bundle "gmarik/vundle"
   Bundle 'jeetsukumaran/vim-filesearch'
   "
   Bundle "jistr/vim-nerdtree-tabs.git"
-
-  "
   Bundle "scrooloose/nerdtree.git"
+  Bundle 'Xuyuanp/nerdtree-git-plugin'
 
   "
   Bundle "justinmk/vim-sneak"
