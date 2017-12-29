@@ -99,6 +99,8 @@ Bundle "gmarik/vundle"
   Bundle "jistr/vim-nerdtree-tabs.git"
   Bundle "scrooloose/nerdtree.git"
   Bundle 'Xuyuanp/nerdtree-git-plugin'
+  Bundle 'ryanoasis/vim-devicons'
+  Bundle 'tiagofumo/vim-nerdtree-syntax-highlight'
 
   "
   Bundle "justinmk/vim-sneak"
@@ -107,7 +109,7 @@ Bundle "gmarik/vundle"
   Bundle 'tpope/vim-eunuch'
 
   " Fuzzy file, buffer, mru, tag, etc finder
-  Bundle 'kien/ctrlp.vim'
+  Bundle 'ctrlpvim/ctrlp.vim'
 
   " Vim plugin to list, select and switch between buffers
   Bundle 'jeetsukumaran/vim-buffergator'
@@ -235,7 +237,7 @@ Bundle "gmarik/vundle"
   Bundle "skwp/greplace.vim"
   Bundle "Townk/vim-autoclose"
   Bundle "vim-scripts/sudo.vim"
-  Bundle "goldfeld/ctrlr.vim"
+  " Bundle "goldfeld/ctrlr.vim"
 
 " Cosmetics, color scheme, Powerline...
   " Color themes pack
