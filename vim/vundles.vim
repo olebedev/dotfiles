@@ -70,6 +70,9 @@ Bundle "gmarik/vundle"
 
   Bundle 'tpope/vim-abolish'
 
+  "
+  Bundle 'tpope/vim-unimpaired'
+
   " Vim motions on speed!
   Bundle 'Lokaltog/vim-easymotion'
   " Camel Case
