@@ -92,8 +92,11 @@ unsetopt correct_all
 # direnv - https://github.com/direnv/direnv
 # eval "$(direnv hook zsh)"
 
-# android
-export ANDROID_HOME=~/Library/Android/sdk
+# android studio
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # RN
 export REACT_EDITOR="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
 
@@ -102,10 +105,8 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh ]
 
-# https://github.com/tj/mmake
-# alias make=mmake
-EMULATOR_DIR="$(dirname "$(which emulator)")"
-function emulator { cd $EMULATOR_DIR && ./emulator "$@"; }
+# EMULATOR_DIR="$(dirname "$(which emulator)")"
+# function emulator { cd $EMULATOR_DIR && ./emulator "$@"; }
 
 # set up completions
 fpath=(~/.zsh/completions $fpath)
